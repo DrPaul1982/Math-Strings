@@ -22,7 +22,10 @@ public class Main {
         System.out.println("The result of adding two numbers is " + addition.action(2, 3) + ".");
 
         Supplier<Integer> RandomNumberGenerator = () -> (int) (Math.random() * 100);
-        System.out.println("Random number from 1 to 100 is " + RandomNumberGenerator.get()+ ".");
+        System.out.println("Random #1 number from 1 to 100 is " + RandomNumberGenerator.get()+ ".");
+
+        RandomNumberGenerator random = new RandomNumberGenerator();
+        System.out.println("Random #2 number from 1 to 100 is " + random.generateRandomNumber(1, 100) + ".");
 
     }
 }
